@@ -1,0 +1,65 @@
+
+.map__wrap{
+    min-width: 100vw;
+    min-height: 50vh;
+    position: relative;
+}
+.map__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.map__wrap.active .map__overlay {
+    display: none;
+}
+.map__img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 50vh;
+}
+.map__consultation{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    max-width: 50vw;
+    max-height: 30vh;
+    font-family: "Europe";
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    z-index: 6;
+    padding: 2em;
+    border-radius: 0 10px 10px 0;
+}
+html.dark .map__consultation{
+    background-color: #303030;
+}
+.map__title{
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.map__form{
+    display: flex;
+    margin: 1em 0;
+}
+.contacts__btn-text{
+    font-size: 1rem;
+}
+.map__text-pdn{
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #c4c4c4;
+}

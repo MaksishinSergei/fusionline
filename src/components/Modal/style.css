@@ -1,0 +1,151 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  font-family: "Europe";
+}
+
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px 60px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  max-width: 800px;
+}
+.popup__icon-close {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  height: 30px;
+  width: 30px;
+}
+.popup__btn {
+  padding: 19px 108px;
+}
+.popup__title {
+  margin: 30px 0;
+  font-family: "EuropeDemi", arial;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+}
+.popup__subtitle {
+  margin-bottom: 30px;
+}
+.popup__form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.input__container {
+  padding: 0 20px;
+  position: relative;
+}
+.popup__form-input {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  font-family: "Europe", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  padding: 18px 45px;
+  color: #303030;
+  outline: none;
+  z-index: 3;
+  position: relative;
+}
+.input__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skew(-10deg);
+  
+  border-radius: 8px;
+}
+.input__container.show-error{
+  &:before{
+    border: 1px solid #ffad00;
+  }
+}
+.popup__form-input::placeholder {
+  color: #c4c4c4;
+}
+.popup__form-input::placeholder {
+  color: #c4c4c4;
+}
+:-moz-placeholder {
+  color: #c4c4c4;
+}
+::-moz-placeholder {
+  color: #c4c4c4;
+}
+.popup__text-pdn {
+  color: #c4c4c4;
+}
+.popup__link-politics {
+  color: #154889;
+  text-decoration: underline;
+}
+.popup__icon-close {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.popup__icon-close:focus path {
+  stroke: #ffad00;
+}
+.popup__icon-close:hover path {
+  stroke: #154889;
+}
+.popup__icon-close:active path {
+  stroke: #ffad00;
+}
+html.dark .popup__wrapper{
+  background-color: #303030;
+}
+html.dark .input__container::before, html.dark .popup__form-input{
+  background-color: #535353;
+  border: 1px solid #535353;
+  color: #ffff;
+}
+html.dark .input__container.show-error, .input__container.show-error{
+  &:before{
+    border: 1px solid #ffad00;
+  }
+  &:after{
+    content: "Проверьте данные";
+    position: absolute;
+    top: -15px;
+    left: 80px;
+    z-index: 10;
+    color: #ffad00;
+  }
+}
+html.dark .popup__form-input::placeholder {
+  color: #c4c4c4;
+}
+html.dark .popup__icon-close path{
+  stroke: #fff;
+}
+html.dark .popup__icon-close:focus path {
+  stroke: #ffad00;
+}
+html.dark .popup__icon-close:hover path {
+  stroke: #154889;
+}
+html.dark .popup__icon-close:active path {
+  stroke: #ffad00;
+}

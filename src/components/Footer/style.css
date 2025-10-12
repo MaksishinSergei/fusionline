@@ -1,0 +1,53 @@
+
+.footer__wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 2em;
+}
+.logo__link-image{
+    max-width: 15vw;
+}
+.footer__contacts{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-family: "EuropeDemi", arial;
+}
+.footer__contacts .contacts__location{
+    margin: 0;
+}
+.contacts__email{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.footer__btn{
+    display: flex;
+    flex-direction: column;
+}
+.footer__btn{
+    margin-bottom: 1em;
+}
+.footer__politics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c4c4c4;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #c4c4c4;
+}
+.text__email{
+    transition: all 0.2s linear;
+}
+.text__email:hover{
+    color: #154889;
+}

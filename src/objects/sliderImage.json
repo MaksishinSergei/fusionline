@@ -1,0 +1,142 @@
+[
+  {
+    "src": "./image/slider-nav-img-1.png",
+    "alt": "radiator",
+    "type": "Solid"
+  },
+  {
+    "src": "./image/slider-nav-img-1.png",
+    "alt": "radiator",
+    "type": "Solid"
+  },
+  {
+    "src": "./image/slider-nav-img-1.png",
+    "alt": "radiator",
+    "type": "Solid"
+  },
+  {
+    "src": "./image/slider-nav-img-1.png",
+    "alt": "radiator",
+    "type": "Solid"
+  },
+  {
+    "src": "./image/flow.png",
+    "alt": "radiator",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/flow.png",
+    "alt": "radiator",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/flow.png",
+    "alt": "radiator",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/flow.png",
+    "alt": "radiator",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/quadra.png",
+    "alt": "radiator",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/quadra.png",
+    "alt": "radiator",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/quadra.png",
+    "alt": "radiator",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/quadra.png",
+    "alt": "radiator",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/flow-2.png",
+    "alt": "dry",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/flow-2.png",
+    "alt": "dry",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/flow-2.png",
+    "alt": "dry",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/flow-2.png",
+    "alt": "dry",
+    "type": "Flow"
+  },
+  {
+    "src": "./image/quadra-2.png",
+    "alt": "dry",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/quadra-2.png",
+    "alt": "dry",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/quadra-2.png",
+    "alt": "dry",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/quadra-2.png",
+    "alt": "dry",
+    "type": "Quadra"
+  },
+  {
+    "src": "./image/details-1.png",
+    "alt": "detail",
+    "type": "det_1"
+  },
+  {
+    "src": "./image/details-1.png",
+    "alt": "detail",
+    "type": "det_1"
+  },
+  {
+    "src": "./image/details-1.png",
+    "alt": "detail",
+    "type": "det_1"
+  },
+  {
+    "src": "./image/details-1.png",
+    "alt": "detail",
+    "type": "det_1"
+  },
+  {
+    "src": "./image/details-2.png",
+    "alt": "detail",
+    "type": "det_2"
+  },
+  {
+    "src": "./image/details-2.png",
+    "alt": "detail",
+    "type": "det_2"
+  },
+  {
+    "src": "./image/details-2.png",
+    "alt": "detail",
+    "type": "det_2"
+  },
+  {
+    "src": "./image/details-2.png",
+    "alt": "detail",
+    "type": "det_2"
+  }
+]

@@ -1,0 +1,79 @@
+.main {
+  background-color: #f4f4f4;
+}
+html.dark .main ,html.dark .slider__btn{
+  background-color: #303030;
+}
+.main__btn {
+  padding: 18px 85px 19px 84px;
+}
+.main__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 175px 0;
+}
+.main__text {
+  max-width: 650px;
+  margin: 40px 0;
+}
+.main__content-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.buttons__slider {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -30px;
+  gap: 20px;
+}
+
+.main__download-link {
+  width: 80px;
+  height: 80px;
+  background-color: #154889;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right: 55px;
+  transition: all 0.2s linear;
+}
+.main__download-link svg:first-child {
+  position: absolute;
+  top: 15px;
+  right: 28px;
+}
+.main__download-link svg:nth-child(2) {
+  position: absolute;
+  top: -65px;
+  right: -65px;
+  animation-name: rotation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main__download-link svg:nth-child(2) path,
+.main__download-link svg:first-child circle {
+  transition: all 0.2s linear;
+}
+.main__download-link:hover,
+.main__download-link svg:nth-child(2):hover path {
+  background-color: #ffad00;
+  fill: #ffad00;
+}
+.main__download-link:hover svg:first-child circle {
+  fill: #ffff;
+}

@@ -1,0 +1,109 @@
+.guarant{
+    margin-bottom: 10em;
+}
+.guarant__title{
+    margin-bottom: 1em;
+}
+.guarant__wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 47%;
+        right: 0;
+        bottom: 0;
+        border: 20px solid #f4f4f4;
+        border-radius: 30px;
+        transform: skew(10deg) translate(-50%, -50%);
+        min-height: 25vh;
+        min-width: 50vw;
+    }
+}
+.guarant__content{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: #154889;
+        border-radius: 50%;
+        top: -50px;
+        right: 50px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: #154889;
+        border-radius: 50%;
+        bottom: -50px;
+        left: -50px;
+    }
+}
+.guarant__item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.guarant__item:nth-child(2){
+    &:before{
+        content: "";
+        position: absolute;
+        top: -48px;
+        left: calc(25%);
+        right: calc(23%);
+        height: 3px;
+        background-color: #ffad00;
+        border-radius: 20px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        right: 52px;
+        bottom: calc(-85%);
+        top: calc(-30%);
+        width: 3px;
+        background-color: #ffad00;
+        border-radius: 20px;
+    }
+}
+.guarant__item:nth-child(3){
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: -60px;
+        left: calc(-7%);
+        right: calc(50%);
+        height: 3px;
+        background-color: #ffad00;
+        border-radius: 20px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        left: -48px;
+        bottom: calc(-73%);
+        top: calc(-130%);
+        width: 3px;
+        background-color: #ffad00;
+        border-radius: 20px;
+    }
+}
+.guarant__img{
+    margin-right: 1em;
+}
+.guarant__img.img_1, .guarant__img.img_2, .guarant__img.img_4{
+    width: 80px;
+    height: 80px;
+}

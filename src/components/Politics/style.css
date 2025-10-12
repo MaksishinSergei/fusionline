@@ -1,0 +1,10 @@
+.politics__content {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em 0;
+}
+.politics__title{
+    margin: 0.5em 0;
+}

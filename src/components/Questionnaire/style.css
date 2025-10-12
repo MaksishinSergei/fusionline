@@ -1,0 +1,196 @@
+.questions{
+    margin-bottom: 10em;
+    font-family: "Europe", sans-serif;
+}
+.questions__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.questions__title{
+    margin-bottom: 1em;
+}
+.questions__subtitle-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 27em;
+}
+.questions__counter{
+    display: flex;
+    justify-content: start;
+    font-size: 2rem;
+    line-height: 2rem;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.questions__counter-num{
+    align-items: start;
+    color: #154889;
+    font-weight: 700;
+    margin-right: 0.5em;
+    border: 2px solid #154889;
+    padding: 0.5em 0.25em;
+    border-radius: 50px;
+}
+.questions__counter-text{
+    font-weight: bold;
+}
+.questions__content{
+    display: flex;
+    flex-direction: column;
+}
+.questions__content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.questions__content-img .quest__img{
+    max-width: 38vw;
+    max-height: 24vh;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.quest__img + .quest__img{
+    margin-left: 1em;
+}
+.questions__content-checkboxes{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  max-width: 100%;
+  background-color: #f0f0f0;
+  padding: 1em 5em 1em 1em;
+  min-width: 15vw;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+html.dark .checkbox{
+    background-color: #535353;
+}
+.checkbox + .checkbox{
+    margin-left: 5em;
+}
+.form__input-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox__custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--disabled-color);
+  border-radius: 4px;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  margin-top: 2px;
+}
+.form__input-checkbox:checked + .checkbox__custom {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+  &:after{
+    opacity: 1;
+  }
+}
+.checkbox__custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -60%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.checkbox__container-input{
+    font-family: "Europe", sans-serif;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #303030;
+    &::placeholder{
+        color: #c4c4c4;
+    }
+}
+html.dark .checkbox__container-input{
+    color: #f4f4f4;
+    &::placeholder{
+        color: #a1a1a1;
+    }
+}
+.questions__content-btn{
+    display: flex;
+    justify-content: end;
+}
+.questions__content-form{
+    margin-bottom: 2em;
+}
+.questions__content-form input + input {
+    margin-left: 2em;
+}
+.questions__content-form--input{
+    font-family: "Europe", sans-serif;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #303030;
+    background-color: #f0f0f0;
+    padding: 1em 5em 1em 1em;
+    max-width: 100%;
+    min-width: 30vw;
+    border-radius: 10px;
+    &::placeholder{
+        color: #c4c4c4;
+    }
+}
+html.dark .questions__content-form--input{
+    color: #f4f4f4;
+    &::placeholder{
+        color: #a1a1a1;
+    }
+}
+html.dark .questions__content-form--input{
+    background-color: #535353;
+}
+.questions__content-checkboxes--text{
+    margin-right: 2em;
+}
+.btn__text-next--disabled, .btn__text-prev--disabled {
+    cursor: not-allowed !important;
+    color: #a1a1a1;
+    &:before{
+        background-color: #f0f0f0;
+    }
+}
+html.dark .btn__text-next--disabled, html.dark .btn__text-prev--disabled {
+    cursor: not-allowed !important;
+    &:before{
+        background-color: #535353;
+    }
+}
+.button:disabled {
+  pointer-events: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
