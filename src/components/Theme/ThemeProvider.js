@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from "react";
 import { ThemeContext } from "./theme.context";
-import useSystemTheme from 'react-use-system-theme';
 
 export function ThemeProvider({children}){
-    const systemTheme = useSystemTheme('dark');
-    const [theme, setTheme] = useState(()=>localStorage.getItem('theme') || systemTheme);
+    const [theme, setTheme] = useState(()=>localStorage.getItem('theme') || "light");
     useEffect(()=>{
         document.documentElement.classList.toggle('dark', theme === 'dark');
         localStorage.setItem('theme', theme);

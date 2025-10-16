@@ -14,7 +14,6 @@
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.4",
     "react-scripts": "5.0.1",
-    "react-use-system-theme": "^1.1.1",
     "react-yandex-map": "^4.6.0",
     "swiper": "^12.0.2",
     "web-vitals": "^2.1.4"
