@@ -87,8 +87,8 @@ export default function Header({ toggleOnModal }) {
                 className="contacts__messengers-link contacts__messengers-link-3"
               >
                 <img
-                  src="./image/vkontakte.svg"
-                  alt="VKontakte"
+                  src="./image/vk.svg"
+                  alt="VK"
                   className="contact__messengers-img contacts__messengers-img-3"
                 />
               </a>
