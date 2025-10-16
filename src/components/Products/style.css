@@ -85,13 +85,13 @@ html.dark .btn__select.active {
 .products__slider-name-text {
   font-weight: 400;
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 1.3rem;
 }
 .products__slider-price-text {
   font-family: "EuropeDemi", sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
 }
 .slider__item-btn {
   position: absolute;
