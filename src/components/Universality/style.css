@@ -11,25 +11,18 @@ html.dark .univers{
   flex-direction: column;
 }
 .univers__title {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 83px;
   margin-bottom: 30px;
-}
-.univers__subtitle {
-  font-size: 19px;
-  line-height: 26px;
 }
 .univers__columns {
   margin: 90px 0;
   display: flex;
   justify-content: center;
-  gap: 252px;
   align-items: center;
   font-family: "EuropeDemi", arial;
   font-weight: 400;
   font-size: 19px;
   line-height: 20px;
+  gap: 10em;
 }
 .univers__column {
   position: relative;
@@ -45,15 +38,7 @@ html.dark .univers{
   background-color: #154889;
   border-radius: 50%;
 }
-.univers__column-2 {
-  margin-top: 22px;
-}
-.univers__img-1 {
-  padding-top: 38px;
-  position: relative;
-  z-index: 3;
-}
-.univers__img-2 {
+.univers__img-1, .univers__img-2 {
   padding-top: 38px;
   position: relative;
   z-index: 3;
@@ -128,4 +113,92 @@ html.dark .univers{
 }
 .univers__column:hover img {
   transform: scale(1.1);
+}
+@media (max-width: 1100px) {
+.univers__columns {
+  margin: 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+}
+@media (max-width: 570px) {
+.univers__columns {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.univers__column-1::after, .univers__column-2::after {
+  background-size: 60% 60%;
+  top: 10px;
+  right: 25px;
+  bottom: 40px;
+  left: 0;
+}
+.univers__column {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.univers__column img {
+  transform: scale(0.5);
+}
+.univers__column:hover img {
+  transform: scale(0.6);
+}
+.univers__column::before {
+  bottom: 55px;
+  left: 55px;
+}
+.left-text::before {
+  bottom: -15px;
+  right: calc(85% + 30px);
+  left: 0;
+}
+.bottom-text::before {
+  right: calc(85% + 30px);
+  left: 15px;
+  bottom: 40px;
+}
+.univers__column-1.view .left-text::before,
+.univers__column-2.view .left-text::before {
+  right: calc(5%);
+}
+.univers__column-1.view .bottom-text::before,
+.univers__column-2.view .bottom-text::before {
+  right: calc(5%);
+}
+.univers__img-1, .univers__img-2 {
+  padding-top: 0;
+}
+}
+@media (max-width: 490px) {
+  .left-text {
+  left: -75px;
+  bottom: 200px;
+}
+.bottom-text {
+  left: 80px;
+  bottom: 15px;
+}
+}
+@media (max-width: 360px) {
+.univers__columns {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+.univers__column::before {
+  bottom: 65px;
+  left: 75px;
+}
+  .left-text {
+  left: -40px;
+  bottom: 200px;
+}
+.bottom-text {
+  left: 95px;
+  bottom: 25px;
+}
 }

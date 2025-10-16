@@ -4,25 +4,14 @@
     min-height: 50vh;
     position: relative;
 }
-.map__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 5;
-    transition: opacity 0.3s ease;
-    cursor: pointer;
-}
-
-.map__wrap.active .map__overlay {
+.map__wrap.active .map__img {
     display: none;
 }
 .map__img{
     object-fit: cover;
     width: 100%;
     max-height: 50vh;
+    cursor: pointer;
 }
 .map__consultation{
     position: absolute;
@@ -63,3 +52,69 @@ html.dark .map__consultation{
     line-height: 1rem;
     color: #c4c4c4;
 }
+@media (max-width: 1100px) {
+    .map__form{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .map__consultation{
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+}
+.map__title{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.contacts__btn-text{
+    font-size: 0.9rem;
+}
+.map__text-pdn{
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    color: #c4c4c4;
+}
+.map__btn{
+    margin-top: 1em;
+}
+}
+@media (max-width: 800px) {
+    .map__consultation{
+    padding: 2em;
+    top: 2%;
+    max-height: 50vh;
+}
+.map__form .popup__form-input{
+    max-width: 30vw;
+    font-size: 0.8rem;
+    align-items: start;
+}
+}
+@media (max-width: 590px) {
+.map__wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.map__consultation{
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    z-index: 6;
+    padding: 2em;
+    border-radius: 0 10px 10px 0;
+    max-width: 100vw;
+    max-height: 50vh;
+}
+.map__form .popup__form-input{
+    max-width: 50vw;
+    font-size: 0.8rem;
+    align-items: start;
+}
+}
+

@@ -38,3 +38,8 @@
         transform: translateX(-50%); 
     }
 }
+@media (max-width: 590px) {
+    .partners__item {
+    max-width: 50vw;
+}
+}

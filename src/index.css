@@ -85,8 +85,8 @@ input{
   display: inline-block;
   font-family: "EuropeDemi";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   color: #303030;
   position: relative;
   overflow: hidden;
@@ -155,8 +155,8 @@ input{
 .button__txt {
   font-family: "Europe", sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 39px;
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 .button__next path,
 .button__next rect,
@@ -227,6 +227,9 @@ input{
   font-size: 3rem;
   line-height: 3rem;
 }
+html.dark .loading{
+  background-color: #303030;
+}
 .loading__wrap{
   display: flex;
   justify-content: center;
@@ -261,4 +264,70 @@ input{
   background-color: #c4c4c4;
   border-radius: 2px;
 }
+@media (max-width: 1530px) {
+  .title{
+    font-family: "Europe";
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+.text{
+  font-family: "Europe", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.slider__btn{
+  max-width: 7vw;
+}
+}
+@media (max-width: 1250px) {
+.button__txt {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+}
+@media (max-width: 1024px) {
+.slider__btn{
+  max-width: 10vw;
+}
+}
+@media (max-width: 790px) {
+  .title{
+    font-family: "Europe";
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+.text{
+  font-family: "Europe", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+}
+@media (max-width: 310px) {
+  .title{
+    font-family: "Europe";
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+.text{
+  font-family: "Europe", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+}
 
+@media (max-width: 720px) {
+.slider__btn{
+  max-width: 15vw;
+}
+}
+@media (max-width: 510px) {
+.slider__btn{
+  max-width: 25vw;
+}
+}

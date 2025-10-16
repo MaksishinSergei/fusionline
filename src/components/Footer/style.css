@@ -11,7 +11,7 @@
     border-top: 1px solid #c4c4c4;
     padding-top: 2em;
 }
-.logo__link-image{
+.footer .logo__link-image{
     max-width: 15vw;
 }
 .footer__contacts{
@@ -50,4 +50,20 @@
 }
 .text__email:hover{
     color: #154889;
+}
+@media (max-width: 790px) {
+    .footer__contacts{
+        display: none;
+    }
+    .footer .logo__link-image{
+        min-width: 30vw;
+    } 
+}
+@media (max-width: 440px) {
+    .footer__btn{
+        display: none;
+    }
+    .footer .logo__link-image{
+        min-width: 50vw;
+    } 
 }

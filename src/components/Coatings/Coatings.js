@@ -87,12 +87,12 @@ export default function Coatings() {
                 </p>
               </div>
             </div>
-            <img
-              src="./image/coat-1.png"
-              alt="coatings"
-              className="coatings__info-img"
-              onClick={() => changeActiveText(1)}
-            />
+            <div className="coatings__info-img" onClick={() => changeActiveText(1)}>
+              <img
+                src="./image/coat-1.png"
+                alt="coatings"
+              />
+            </div>
           </div>
           <div className={`coatings__info-item ${isVisible ? "visible" : ""}`}>
             <div className="coatings__item-content">
@@ -129,13 +129,12 @@ export default function Coatings() {
                 </p>
               </div>
             </div>
-
-            <img
-              src="./image/coat-2.png"
-              alt="coatings"
-              className="coatings__info-img"
-              onClick={() => changeActiveText(2)}
-            />
+            <div className="coatings__info-img" onClick={() => changeActiveText(2)}>
+              <img
+                src="./image/coat-2.png"
+                alt="coatings"
+              />
+            </div>
           </div>
           <div className={`coatings__info-item ${isVisible ? "visible" : ""}`}>
             <div className="coatings__item-content">
@@ -171,12 +170,12 @@ export default function Coatings() {
                 </p>
               </div>
             </div>
-            <img
-              src="./image/coat-3.png"
-              alt="coatings"
-              className="coatings__info-img"
-              onClick={() => changeActiveText(3)}
-            />
+            <div className="coatings__info-img" onClick={() => changeActiveText(3)}>
+              <img
+                src="./image/coat-3.png"
+                alt="coatings"
+              />
+            </div>
           </div>
         </div>
       </div>

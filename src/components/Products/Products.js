@@ -282,7 +282,7 @@ export default function Products({ toggleOnItemModal }) {
               breakpoints={{
                 640: {
                   slidesPerView: 1,
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                 },
                 768: {
                   slidesPerView: 2,
@@ -359,6 +359,97 @@ export default function Products({ toggleOnItemModal }) {
                 ))}
             </Swiper>
           </>
+          <div className="products__buttons-slider--mobile">
+              <button
+                className={`slider__btn button__prev ${
+                  isLengthArray <= 3 ? "" : isCurrentImg !== 0 ? "active" : ""
+                }`}
+                onClick={() => {
+                  swiperRef.current.slidePrev();
+                  changeCurrentIndexForPrevBtn();
+                }}
+              >
+                <p
+                  className={`button__txt text__prev ${
+                    isLengthArray <= 3 ? "" : isCurrentImg !== 0 ? "active" : ""
+                  }`}
+                >
+                  0{textPrevBtn()}
+                </p>
+                <svg
+                  width="57"
+                  height="50"
+                  viewBox="0 0 57 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="-1"
+                    y="1"
+                    width="48"
+                    height="48"
+                    rx="24"
+                    transform="matrix(-1 0 0 1 55 0)"
+                    stroke="#C4C4C4"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M45 25H1"
+                    stroke="#C4C4C4"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+              <button
+                className={`slider__btn button__next ${
+                  isLengthArray <= 3
+                    ? ""
+                    : isCurrentImg < isLengthArray - 3
+                    ? "active"
+                    : ""
+                }`}
+                onClick={() => {
+                  swiperRef.current.slideNext();
+                  changeCurrentIndexForNextBtn();
+                }}
+              >
+                <svg
+                  width="57"
+                  height="50"
+                  viewBox="0 0 57 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="48"
+                    height="48"
+                    rx="24"
+                    stroke="#C4C4C4"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M12 25H56"
+                    stroke="#C4C4C4"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <p
+                  className={`button__txt text__next ${
+                    isLengthArray <= 3
+                      ? ""
+                      : isCurrentImg < isLengthArray - 3
+                      ? "active"
+                      : ""
+                  }`}
+                >
+                  0{textNextBtn()}
+                </p>
+              </button>
+            </div>
         </div>
       </div>
     </section>

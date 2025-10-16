@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import "./style.css";
 import orderPopup from "./../../objects/order.json";
+import katalog from "./../../objects/katalog.pdf";
 
 export default function Main({ toggleOnModal }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = () => {
     toggleOnModal(orderPopup);
+  };
+  const handleDownload = (e) => {
+    e.preventDefault();
+    const link = document.createElement('a');
+    link.href = katalog;
+    link.download = 'katalog.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
   const imagesSlider = [
     { src: "./image/main-img-1.png", alt: "radiator" },
@@ -44,7 +54,7 @@ export default function Main({ toggleOnModal }) {
             </div>
           </div>
           <div className="main__content-col">
-            <a href="" className="main__download-link">
+            <a href={katalog} className="main__download-link" onClick={handleDownload} download={katalog}>
               <svg
                 width="24"
                 height="48"

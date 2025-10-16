@@ -44,7 +44,6 @@ export default function Item({ data, toggleOffItemModal, toggleOnModal }) {
           />
         </svg>
         <div className="item__wrapper">
-          <>
             <Swiper
               modules={[Pagination, Navigation]}
               slidesPerView={1}
@@ -53,7 +52,7 @@ export default function Item({ data, toggleOffItemModal, toggleOnModal }) {
               breakpoints={{
                 640: {
                   slidesPerView: 1,
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                 },
                 768: {
                   slidesPerView: 1,
@@ -69,24 +68,23 @@ export default function Item({ data, toggleOffItemModal, toggleOnModal }) {
                 clickable: true,
                 dynamicBullets: true,
               }}
-              navigation={true}
+              navigation={false}
               className="item__slider-wrapper"
             >
               {sliderContent.map((image) => (
                 <SwiperSlide>
-                  <img
-                    loading="lazy"
-                    key={image.id}
-                    src={image.src}
-                    alt={image.alt}
-                    className="item__slider-img"
-                  />
+                  <div className="swiper__slide">
+                    <img
+                      loading="lazy"
+                      src={image.src}
+                      alt={image.alt}
+                      className="item__slider-img"
+                    />
+                  </div>
                 </SwiperSlide>
               ))}
             <div className="item__pagination"></div>
             </Swiper>
-            
-          </>
           <div className="item__about">
             <h2 className="item__about-title">{data[0].name}</h2>
 
@@ -101,7 +99,7 @@ export default function Item({ data, toggleOffItemModal, toggleOnModal }) {
                     </li>
                   ))}
                 <button className="button item__btn" onClick={handleClick}>
-                  <span className="btn-text item__btn-text">Сделать заказ</span>
+                  <span className="btn-text item__btn-text">Заказать</span>
                 </button>
               </ul>
             ))}

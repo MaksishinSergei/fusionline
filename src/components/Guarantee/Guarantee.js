@@ -20,7 +20,7 @@ export default function Guarantee(){
                         </div>
                         <div className="guarant__item">
                             <img src="./image/guarant-2.png" alt="Гарантия" className="guarant__img img_3" />
-                            <p className="text guarant__text">лет гарантии на изделия</p>
+                            <p className="text guarant__text">лет гарантии</p>
                         </div>
                         <div className="guarant__item">
                             <img src="./image/guarant-4.svg" alt="Гарантия" className="guarant__img img_4" />

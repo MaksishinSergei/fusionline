@@ -149,3 +149,64 @@ html.dark .popup__icon-close:hover path {
 html.dark .popup__icon-close:active path {
   stroke: #ffad00;
 }
+@media (max-width: 720px) {
+.popup__wrapper {
+  padding: 2em 3em;
+}
+  .popup__form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .popup__btn{
+    margin-top: 1em;
+  }
+  .popup__title{
+  margin: 1.5em 0;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  }
+  .popup__subtitle{
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  }
+  .popup__text-pdn{
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  }
+.popup__btn {
+  padding: 1em 5em;
+}
+}
+@media (max-width: 410px) {
+  .popup__icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.input__container {
+  padding: 0 10px;
+}
+.popup__form-input {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  padding: 1em 1em;
+}
+.popup__btn {
+  padding: 0.5em 3em;
+}
+  .popup__title{
+  margin: 1em 0;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  }
+  .popup__subtitle{
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  }
+  .popup__text-pdn{
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  }
+}

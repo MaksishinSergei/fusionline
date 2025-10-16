@@ -221,10 +221,10 @@ const handlePhoneChange = (e) => {
               </div>
             <div className="questions__content-btn">
               <button className={`button btn__text-prev ${count === 1 ? 'btn__text-prev--disabled' : ''}`} onClick={() => handleClickPrev()} disabled={count === 1 ? true : false}>
-                <span className="btn-text main__btn-text">Предыдущий вопрос</span>
+                <span className="btn-text main__btn-text">Назад</span>
               </button>
               <button className={`button btn__text-next ${!isCurrentQuestionValid() ? 'btn__text-next--disabled' : ''}`} onClick={() => count !== 6 ? handleClickNext() : handleSale()} disabled={!isCurrentQuestionValid()}>
-                <span className="btn-text main__btn-text">{count === 6 ? "Получить скидку" : "Следующий вопрос"}</span>
+                <span className="btn-text main__btn-text">{count === 6 ? "Получить скидку" : "Далее"}</span>
               </button>
             </div>
         </div>

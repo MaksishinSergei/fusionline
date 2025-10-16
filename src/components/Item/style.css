@@ -10,44 +10,69 @@
   left: 0;
   z-index: 20;
   overscroll-behavior: contain;
+  overflow-y: auto;
 }
 html.dark .popup__item{
   background-color: #303030;
 }
 .item__wrapper {
   display: flex;
+  justify-content: center;
   gap: 30px;
-
 }
-.item__about {
-  flex: 0 0 740px;
+.item__about-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .item__about-title {
   font-family: "EuropeDemi", sans-serif;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   margin-bottom: 30px;
   text-align: left;
 }
 .item__about-text {
   padding: 20px 0;
   border-bottom: 1px solid #c4c4c4;
-  font-size: 19px;
-  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   color: #232323;
   display: flex;
   justify-content: space-between;
 }
+.item__about-text .value{
+  margin-left: 1em;
+  text-align: right;
+}
 .item__btn {
   margin-top: 50px;
-  padding: 18px 301px 19px 300px;
+  padding: 1em 20em 1em 20em;
 }
 html.dark .item__about-text{
   color: #fff;
 }
-.item__slider-wrapper{
+.item__slider-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__slider-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.swiper__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .item__pagination {
   position: absolute;
@@ -69,4 +94,52 @@ html.dark .item__about-text{
   background: #ffad00;
   opacity: 1;
   transform: scale(1.2);
+}
+@media (max-width: 1350px) {
+  .item__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.item__slider-wrapper{
+margin-top: 25em;
+}
+.item__wrapper .swiper{
+  max-width: 60vw;
+}
+.item__about-title {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+
+}
+.item__about-text {
+  padding: 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+.item__btn{
+  margin-bottom: 1em;
+}
+}
+@media (max-width: 790px) {
+.item__btn{
+  padding: 1em 10em 1em 10em;
+}
+.item__slider-wrapper{
+margin-top: 15em;
+}
+}
+@media (max-width: 450px) {
+.item__btn{
+  padding: 1em 3em 1em 3em;
+  margin-bottom: 0;
+}
+.item__about-text {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+.item__slider-wrapper{
+margin-top: 1em;
+}
 }

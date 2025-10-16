@@ -59,16 +59,14 @@ export default function MyMap() {
         <section id="map" className="map">
             <div className={`map__wrap ${activeMap ? "active" : ""}`} >
                 {!activeMap ? (
-                    <>
-                        <img 
-                            loading="lazy" 
-                            decoding="async" 
-                            src="./image/map-bg.webp" 
-                            alt="Map" 
-                            className="map__img"
-                        />
-                        <div className="map__overlay" onClick={handleClick}></div>
-                    </>
+                    <img 
+                        loading="lazy" 
+                        decoding="async" 
+                        src="./image/map-bg.webp" 
+                        alt="Map" 
+                        className="map__img"
+                        onClick={handleClick}
+                    />
                 ) : (
                     <iframe 
                         loading="lazy" 

@@ -33,7 +33,7 @@ export default function Header({ toggleOnModal }) {
             </a>
           </div>
           <div className="contacts">
-            <div className="contacts__time">10:00 — 18:00</div>
+            <div className="contacts__time">10:00—18:00</div>
             <div className="contacts__location">
               <a href="https://yandex.ru/maps/213/moscow/house/bersenevskaya_naberezhnaya_6s3/Z04YcAdpS0MEQFtvfXt1cXpmYA==/" className="contacts__location-1">
                 г. Москва, Берсеневская набережная, 6с3
@@ -56,6 +56,11 @@ export default function Header({ toggleOnModal }) {
                 +7 (383) 312-04-06
               </a>
             </div>
+          </div>
+          <div className="buttons__wrap">
+            <button className="button contacts__btn" onClick={handleClick}>
+              <span className="btn-text contacts__btn-text">Заказать звонок</span>
+            </button>
             <div className="contacts__messengers">
               <a
                 href="#home"
@@ -88,10 +93,8 @@ export default function Header({ toggleOnModal }) {
                 />
               </a>
             </div>
+
           </div>
-          <button className="button contacts__btn" onClick={handleClick}>
-            <span className="btn-text contacts__btn-text">Заказать звонок</span>
-          </button>
           <button
             className={`btn__navigation ${isOpen ? "open" : ""}`}
             onClick={() => setOpen(!isOpen)}
@@ -151,13 +154,15 @@ export default function Header({ toggleOnModal }) {
               </li>
             </ul>
           </nav>
-          {/*<div className="header__nav-mobile">
+          <div className="header__nav-pad">
             <a href="#" className="contacts__location-1">
               г. Москва, Берсеневская набережная, 6с3
             </a>
             <a href="#" className="contacts__location-2">
               г. Новосибирск, ул. Сибиряков Гвардейцев, 50
             </a>
+          </div>
+          <div className="header__nav-mobile">
             <div className="contacts__time">10:00 — 18:00</div>
             <a href="tel:+7 (495) 968-04-06" className="contacts__phone-1">
               +7 (495) 968-04-06
@@ -165,10 +170,7 @@ export default function Header({ toggleOnModal }) {
             <a href="tel:+7 (383) 312-04-06" className="contacts__phone-2">
               +7 (383) 312-04-06
             </a>
-            <button className="contacts__btn">
-              <span className="contacts__btn-text">Заказать звонок</span>
-            </button>
-          </div>*/}
+          </div>
           <div className="theme">
             <p className="theme__text">{theme === "dark" ? "🌒" : "☀️"}</p>
             <SwitchButtonTheme 
