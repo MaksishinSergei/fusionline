@@ -13,7 +13,9 @@
   src: local("EuropeDemi"), url("./fonts/1601629258xe.ttf") format("truetype");
   font-weight: normal;
 }
-
+html{
+  overflow-y: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +24,7 @@
 }
 body {
   color: #303030;
-  overflow-x: hidden;
+  
   position: relative; 
 }
 html.dark,
